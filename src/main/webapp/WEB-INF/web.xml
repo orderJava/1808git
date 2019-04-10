@@ -7,7 +7,7 @@
     <display-name>Archetype Created Web Application</display-name>
     <servlet>
       <servlet-name>wxbGoodServlet</servlet-name>
-      <servlet-class>com.qianfeng.dao.dto.servlet.WxbGoodServlet</servlet-class>
+      <servlet-class>com.qianfeng.servlet.WxbGoodServlet</servlet-class>
     </servlet>
     <servlet-mapping>
       <servlet-name>wxbGoodServlet</servlet-name>

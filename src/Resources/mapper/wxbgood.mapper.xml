@@ -2,12 +2,12 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qianfeng.dao.dto.WxbGood">
+<mapper namespace="com.qianfeng.dto.WxbGood">
 <!--&lt;!&ndash;加入这个标签才会有二级缓存，不加没有&ndash;&gt;-->
     <!--<cache/>-->
     <!--这个标签需要反序列化-->
 
-    <resultMap id="connResultMap" type="com.qianfeng.dao.dto.WxbGood">
+    <resultMap id="connResultMap" type="com.qianfeng.dto.WxbGood">
         <id property="goodId" column="good_id"/>
 
         <result property="goodName" column="good_name" />
@@ -86,7 +86,7 @@
         <include refid="params"/>
         from wxb_good limit #{index},#{size}
     </select>
-    <insert id="AddWxbGood" parameterType="com.qianfeng.dao.dto.WxbGood">
+    <insert id="AddWxbGood" parameterType="com.qianfeng.dto.WxbGood">
         insert into wxb_good (good_id, good_name, customer_id, good_pic, good_pic1, good_pic2, promote_desc, sku_title, sku_cost, sku_price, sku_pmoney, copy_ids, copy_desc, forward_link,
         order_no, type_id, tags, state, create_time, toped, recomed, toped_time, recomed_time, spc_id, zon_id, sell_num, website, iswxpay, isfdfk,
         leixing_id, kfqq) values (#{goodId}, #{goodName}, #{customerId}, #{goodPic}, #{goodPic1}, #{goodPic2}, #{promoteDesc}, #{skuTitle}, #{skuCost}, #{skuPrice}, #{skuPmoney}, #{copyIds}, #{copyDesc}, #{forwardLink},

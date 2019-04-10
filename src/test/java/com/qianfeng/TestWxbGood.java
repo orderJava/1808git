@@ -1,7 +1,7 @@
 package com.qianfeng;
 
-import com.qianfeng.dao.dto.WxbGood;
-import com.qianfeng.dao.dto.WxbGoodSku;
+import com.qianfeng.dto.WxbGood;
+import com.qianfeng.dto.WxbGoodSku;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
